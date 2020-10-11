@@ -29,9 +29,9 @@ def main():
         username = input(' Enter username: ')
         
         while True:
-            print('use : cc = to auto generate a password for your account')
+            print('use : gp = to auto generate a password for your account')
             user_option = input().lower()
-            if user_option == 'cc':
+            if user_option == 'gp':
                 password = get_random_password()
                 break
             else:
@@ -58,7 +58,7 @@ def main():
         
         
         save_credentials(create_credentials(account,username,password))
-        print("New Passwords created.")
+        print("New Password created.")
     elif short_code == 'dc':
         print("Enter the credentials you wish to delete")
         del_credentials = input()
